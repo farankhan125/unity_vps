@@ -232,8 +232,9 @@ def generate_answer(request: UserInput):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Below is just for testing and running server locally (remove below when uploading it on a cloud)
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=port)
+# # Below is just for testing and running server locally (remove below when uploading it on a cloud)
+# if __name__ == "__main__":
+#     import uvicorn
+#     port = int(os.getenv("PORT", 8000))
+
+#     uvicorn.run("main:app", host="0.0.0.0", port=port)
